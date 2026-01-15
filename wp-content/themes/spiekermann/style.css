@@ -1,0 +1,128 @@
+/*
+Theme Name: Spiekermann
+Text Domain: spiekermann
+Version: 1.0.0
+Description: Spiekermann is a bold WordPress block theme for blogs and portfolios, featuring an asymmetrical grid layout on the front page. Inspired by brutalist design, it uses a quirky pixelated sans-serif font and emphasizes raw aesthetics, unconventional layouts, and typographic focus. It includes ten different color schemes and three different typographic styles to choose from. Activate the Jetpack plugin to add a row of related posts to the bottom of your blog posts. Demo: https://spiekermann.andersnoren.se
+Tags: one-column, custom-colors, custom-menu, custom-logo, editor-style, featured-images, full-site-editing, block-patterns, sticky-post, threaded-comments, translation-ready, wide-blocks, block-styles, style-variations, blog, portfolio, news
+Author: Anders Norén
+Author URI: https://andersnoren.se
+Theme URI: https://andersnoren.se/teman/spiekermann-wordpress-theme/
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Requires at least: 6.7
+Requires PHP: 7.4
+Tested up to: 6.7
+*/
+
+body {
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-font-smoothing: antialiased;
+	font-feature-settings: 'salt' on, 'calt' off, 'liga' off;
+	font-synthesis: small-caps style;
+}
+
+:root :where(.wp-site-blocks) > * {
+	margin-block-start: 0;
+}
+
+a {
+	text-decoration-thickness: 1px;
+	text-underline-offset: 0.15em;
+}
+
+a, .wp-element-button {
+	transition: color .1s linear, background-color .1s linear, border-color .1s linear, opacity .1s linear;
+}
+
+@supports (min-height: 100dvh) {
+	[style*="min-height:100vh"] {
+		min-height: calc( 100dvh - var( --wp-admin--admin-bar--height, 0px ) ) !important;
+	}
+}
+
+.wp-site-blocks > .wp-block-group[style*="min-height:100vh"] > main {
+	flex: 1;
+}
+
+/*
+ * Elements
+ */
+
+thead {
+	background-color: var( --wp--preset--color--contrast );
+	border: none;
+	color: var( --wp--preset--color--base );
+}
+
+th {
+	font-weight: 400;
+}
+
+/*
+ * Typography
+ */
+
+:where( .has-x-large-font-size ),
+:where( .has-large-font-size ) {
+	line-height: 1.35;
+}
+
+.entry-content,
+.comment-content {
+	font-feature-settings: 'cv10' on, 'ss01' on, 'ss03' on, 'ss02' on, 'liga' off, 'calt' off;
+}
+
+/*
+ * Helper classes
+ */
+
+.hide-empty:not(:has(*)) {
+	display: none !important;
+}
+
+.ss00 { font-feature-settings: 'liga' off; }
+.ss01 { font-feature-settings: 'salt' on; }
+.ss02 { font-feature-settings: 'salt' on, 'ss02' on; }
+.ss03 { font-feature-settings: 'salt' on, 'ss03' on; }
+.ss04 { font-feature-settings: 'salt' on, 'ss04' on; }
+.ss05 { font-feature-settings: 'salt' on, 'ss05' on; }
+
+/*
+ * Inputs
+ */
+
+::placeholder {
+	color: var( --wp--preset--color--contrast-2 );
+}
+
+label {
+	font-size: var(--wp--preset--font-size--small);
+}
+
+:where(input, textarea, select) {
+	background-color: var(--wp--preset--color--base);
+	border: 1px solid;
+	border-radius: 5px;
+	color: inherit;
+	font-family: var(--wp--preset--font-family--body-alt);
+	font-size: var( --wp--preset--font-size--normal );
+	line-height: 1.5;
+	margin: 0;
+	padding: .666em 1em;
+}
+
+textarea {
+	height: 5lh;
+}
+
+/*
+ * Template Part: Footer
+ */
+
+footer.wp-block-template-part a[href="https://andersnoren.se"] {
+	text-decoration: none;
+}
+
+footer.wp-block-template-part a[href="https://andersnoren.se"]:hover {
+	text-decoration: underline;
+}
