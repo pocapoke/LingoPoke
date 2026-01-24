@@ -103,7 +103,7 @@
 
 /* Slider */
 .slick-loading .slick-list {
-  background: #fff url("/wp-content/plugins/essential-blocks/assets/images/ajax-loader.gif") center center no-repeat;
+  background: #fff url("https://lingopoke.com/wp-content/plugins/essential-blocks/assets/images/ajax-loader.gif") center center no-repeat;
 }
 
 /* Icons */
@@ -112,9 +112,9 @@
   font-weight: normal;
   font-style: normal;
 
-  src: url("/wp-content/plugins/essential-blocks/assets/fonts/slick.woff");
-  src: url("/wp-content/plugins/essential-blocks/assets/fonts/slick.woff") format("woff"),
-    url("/wp-content/plugins/essential-blocks/assets/fonts/slick.ttf") format("truetype");
+  src: url("https://lingopoke.com/wp-content/plugins/essential-blocks/assets/fonts/slick.woff");
+  src: url("https://lingopoke.com/wp-content/plugins/essential-blocks/assets/fonts/slick.woff") format("woff"),
+    url("https://lingopoke.com/wp-content/plugins/essential-blocks/assets/fonts/slick.ttf") format("truetype");
 }
 /* Arrows */
 .slick-prev,
