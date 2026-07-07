@@ -1,0 +1,31 @@
+{
+    "title": "Günters",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#F6F2E7",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#FE3908",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#FE3908",
+					"name": "Contrast 2",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "#FE3908",
+					"name": "Contrast 3",
+					"slug": "contrast-3"
+				}
+			]
+		}
+    }
+}

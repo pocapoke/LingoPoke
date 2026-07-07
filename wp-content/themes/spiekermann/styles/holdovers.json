@@ -1,0 +1,31 @@
+{
+    "title": "Holdovers",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#FEF7EE",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#282826",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#5E5C58",
+					"name": "Contrast 2",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "#938F8A",
+					"name": "Contrast 3",
+					"slug": "contrast-3"
+				}
+			]
+		}
+    }
+}

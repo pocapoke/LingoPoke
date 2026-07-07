@@ -1,0 +1,31 @@
+{
+    "title": "Big Blue",
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 3,
+    "settings": {
+        "color": {
+			"palette": [
+				{
+					"color": "#FAFAFA",
+					"name": "Base",
+					"slug": "base"
+				},
+				{
+					"color": "#288DFF",
+					"name": "Contrast",
+					"slug": "contrast"
+				},
+				{
+					"color": "#5DA8FE",
+					"name": "Contrast 2",
+					"slug": "contrast-2"
+				},
+				{
+					"color": "#91C3FD",
+					"name": "Contrast 3",
+					"slug": "contrast-3"
+				}
+			]
+		}
+    }
+}
